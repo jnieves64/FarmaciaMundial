@@ -549,7 +549,7 @@ footer .footer_bottom p {
   .hero_principal {
     padding: 60px 0 0 0;
     background-image: url("./assets/Foto-Fachada.png");
-    background: linear-gradient(90deg, rgba(8, 66, 140, 0.7) 0%, rgba(68, 110, 166, 0.7) 100%), url(../../assets/Foto-Fachada.png);
+    background: linear-gradient(90deg, rgba(8, 66, 140, 0.7) 0%, rgba(68, 110, 166, 0.7) 100%), url(./assets/Foto-Fachada.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center 20%;

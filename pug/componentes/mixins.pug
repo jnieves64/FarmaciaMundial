@@ -1,0 +1,8 @@
+mixin main1(titulo, desc, imagen, descImg)
+    article.main
+        .main_contenido
+            h3.main_contenido--title=titulo 
+            p.main_contenido--desc=desc 
+            a(href="#").main_contenido--button Más Info
+        .main_contenido_image 
+            img(src="../../assets/"+imagen, alt=""+descImg)

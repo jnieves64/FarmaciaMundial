@@ -1,0 +1,207 @@
+.hero {
+    width: 100%;
+    min-width: 290px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero_principal {
+    padding: 65px 20px 35px 20px;
+    background: linear-gradient(197.42deg, #08428C 55.75%, #446EA6 92.61%);
+}
+
+.hero_principal_izq {
+    text-align: center;
+}
+
+.hero_principal_izq--title {
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 5.5rem;
+    line-height: 5.4rem;
+    text-align: center;
+    color: $principal-white;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.25);
+}
+
+.hero_principal_izq--desc {
+    margin-bottom: 45px;
+    font-weight: 500;
+    font-size: 3.2rem;
+    line-height: 3.75rem;
+    text-align: center;
+    color: $principal-white;
+}
+
+.hero_principal_izq--img {
+    margin: 0 auto;
+    margin-bottom: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 290px;
+    height: 290px;
+    background: $secondary-white;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+
+.hero_principal_izq--img img {
+    width: 260px;
+    height: 260px;
+    border-radius: 20px;
+    object-fit: cover;
+    object-position: -90px;
+}
+
+.hero_principal_izq--button {
+    @include btnPrimary;
+}
+
+.hero_principal_der {
+    display: none;
+}
+
+.hero_secondary {
+    padding: 40px 22px 35px 22px;
+    text-align: center;
+}
+
+.hero_secondary--title {
+    margin-bottom: 5px;
+    @include tituloSm;
+    color: $principal-blue;
+}
+
+.hero_secondary-content {
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: $principal-blue;
+}
+
+@media only screen and (min-width: 744px) {
+    .hero_principal {
+        padding: 60px 0 0 0;
+        background-image: url("../../assets/Foto-Fachada.png");
+        background: linear-gradient(90deg, rgba(8, 66, 140, 0.7) 0%, rgba(68, 110, 166, 0.7) 100%), url(../../assets/Foto-Fachada.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center 20%;
+    }
+
+    .hero_principal_izq--title {
+        font-weight: 700;
+        font-size: 5.5rem;
+        line-height: 6.4rem;
+        margin-bottom: 25px;
+    }
+
+    .hero_principal_izq--desc {
+        font-weight: 500;
+        font-size: 3.6rem;
+        line-height: 4.2rem;
+        margin-bottom: 30px;
+    }
+
+    .hero_principal_izq--img {
+        display: none;
+    }
+
+    .hero_principal_der {
+        display: block;
+        margin-top: 40px;
+        width: 100%;
+        text-align: center;
+
+        img {
+            width: 55%;
+        }
+    }
+
+    .hero_secondary {
+        padding: 30px 50px;
+    }
+
+    .hero_secondary--title {
+        margin-bottom: 30px;
+        font-weight: 700;
+        font-size: 2.8rem;
+        line-height: 3.2rem;
+    }
+
+    .hero_secondary-content {
+        font-weight: 500;
+        font-size: 1.8rem;
+        line-height: 2.1rem;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .hero_principal {
+        display: flex;
+        justify-content: space-between;
+        padding: 50px 15% 0 15%;
+    }
+
+    .hero_principal_izq {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .hero_principal_der {
+        display: inline-block;
+        margin: 0;
+        width: 50%;
+
+        img {
+            width: 100%;
+            max-width: 400px;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .hero_principal_izq--title {
+        font-weight: 700;
+        font-size: 6rem;
+        line-height: 7rem;
+        text-align: left;
+        margin-bottom: 30px;
+        text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25)
+    }
+
+    .hero_principal_izq--desc {
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 4.7rem;
+        text-align: left;
+        margin-bottom: 30px;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .hero_principal_izq--button {
+        max-width: 150px;
+    }
+
+    .hero_secondary {
+        padding: 40px 0 40px 0;
+
+        &--title {
+            margin-bottom: 30px;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 4.7rem;
+        }
+
+        &-content {
+            margin: 0 auto;
+            max-width: 850px;
+            font-weight: 500;
+            font-size: 2.2rem;
+            line-height: 2.6rem;
+        }
+    }
+}

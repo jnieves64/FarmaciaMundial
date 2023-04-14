@@ -1,0 +1,12 @@
+extend componentes/plantilla.pug
+block contenidos
+    main 
+        include componentes/hero.pug
+        section.main_sections 
+            +main1("Nuestros Productos", "Contamos con una amplia variedad de productos que se adaptan a las necesidades de cada uno de nuestros clientes. Nuestro compromiso es ofrecer productos de alta calidad y a precios competitivos, y para ello trabajamos de la mano de los mejores proveedores y marcas reconocidas en el mercado.", "main1.png", "Imagen en caricatura de unos medicamentos.")
+            +main1("Servicios Adicionales", "¡En nuestra farmacia, no solo nos preocupamos por ofrecerte los mejores productos, también nos enfocamos en brindarte una atención integral y personalizada para tu bienestar! Es por ello que además de nuestros productos, ofrecemos una amplia gama de servicios adicionales que complementan tu experiencia en nuestra tienda.", "main2.png", "Imagen de un doctor tomandole la presión arterial a una persona.")
+            article.main2
+                h3.main2_title Promociones y Descuentos
+                .main2_img 
+                p.main2_desc En nuestra farmacia sabemos lo importante que es cuidar de la salud de tu familia, y es por ello que queremos ofrecerte los mejores productos a precios competitivos. Además, también ofrecemos descuentos exclusivos en productos de temporada y ofertas especiales para nuestros clientes frecuentes.
+                a(href="#").main2_contenido--button Más Info
